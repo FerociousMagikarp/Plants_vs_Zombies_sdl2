@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PlantsVSZombies" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PlantsVSZombies" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PlantsVSZombies" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="F:/Programs/SDL2/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf" />
+			<Add directory="F:/Programs/SDL2/lib" />
+		</Linker>
+		<Unit filename="include/GameControl.h" />
+		<Unit filename="include/GlobalValues.h" />
+		<Unit filename="include/Object.h" />
+		<Unit filename="include/ObjectBullet.h" />
+		<Unit filename="include/ObjectCard.h" />
+		<Unit filename="include/ObjectCharacter.h" />
+		<Unit filename="include/ObjectClicked.h" />
+		<Unit filename="include/ObjectPlant.h" />
+		<Unit filename="include/ObjectSun.h" />
+		<Unit filename="include/ObjectZombie.h" />
+		<Unit filename="include/ResourceManager.h" />
+		<Unit filename="include/SceneBase.h" />
+		<Unit filename="include/SceneGame.h" />
+		<Unit filename="include/SceneLogo.h" />
+		<Unit filename="include/SceneManager.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/GameControl.cpp" />
+		<Unit filename="src/GlobalValues.cpp" />
+		<Unit filename="src/Object.cpp" />
+		<Unit filename="src/ObjectBullet.cpp" />
+		<Unit filename="src/ObjectCard.cpp" />
+		<Unit filename="src/ObjectCharacter.cpp" />
+		<Unit filename="src/ObjectClicked.cpp" />
+		<Unit filename="src/ObjectPlant.cpp" />
+		<Unit filename="src/ObjectSun.cpp" />
+		<Unit filename="src/ObjectZombie.cpp" />
+		<Unit filename="src/ResourceManager.cpp" />
+		<Unit filename="src/SceneBase.cpp" />
+		<Unit filename="src/SceneGame.cpp" />
+		<Unit filename="src/SceneLogo.cpp" />
+		<Unit filename="src/SceneManager.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
